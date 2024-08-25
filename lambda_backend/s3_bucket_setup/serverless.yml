@@ -20,6 +20,8 @@ resources:
       Properties:
         BucketName:
           Fn::Sub: '${{self:service}}-${{self:custom.stage}}-${AWS::AccountId}'
+        PublicAccessBlockConfiguration:
+          BlockPublicPolicy: false
         LifecycleConfiguration:
           # Deletes the route picture after 90 days, maximum allowable age we permit in frontend
           Rules:

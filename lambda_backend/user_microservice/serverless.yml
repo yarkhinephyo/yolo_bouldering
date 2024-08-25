@@ -4,7 +4,7 @@ service: yolo-bouldering-user
 
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs16.x
   stage: dev
   region: ap-southeast-1
   memorySize: 1024
